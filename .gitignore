@@ -11,7 +11,6 @@
 
 ##  Dotfiles except when whitelisted
 ##
-.*
 !.editorconfig
 !.git*
 !.ruby-version

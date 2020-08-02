@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  boilerplate-db:
+    container_name: boilerplate-db
+    image: ${DB_IMAGE}
+    ports:
+      - ${DB_PORT_ON_HOST}:5432
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    restart:
+      unless-stopped
+    networks:
+      - boilerplate_net
+
+networks:
+  boilerplate_net:
