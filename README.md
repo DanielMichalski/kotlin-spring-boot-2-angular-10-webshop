@@ -61,6 +61,6 @@ OpenAPI Spec          | http://localhost:8888/api/v3/api-docs
 
 Database access
 ---------------------------------------------
-URL                                          | Username         | Password
----                                          | ---              | ---
-jdbc:postgresql://localhost:5555/boilerplate | boilerplate_user | secret
+| URL                                          	| Username         	| Password 	|
+|----------------------------------------------	|------------------	|----------	|
+| jdbc:postgresql://localhost:5555/boilerplate 	| boilerplate_user 	| secret   	|
