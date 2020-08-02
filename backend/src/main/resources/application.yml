@@ -1,0 +1,20 @@
+server:
+  port: 8888
+  servlet:
+    context-path: '/api'
+
+spring:
+  datasource:
+    driver-class-name: 'org.postgresql.Driver'
+    jdbc-url: 'jdbc:postgresql://localhost:5555/boilerplate'
+    username: 'boilerplate_user'
+    password: 'secret'
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl.auto: validate
+        format_sql: false
+        physical_naming_strategy: 'com.vladmihalcea.hibernate.type.util.CamelCaseToSnakeCaseNamingStrategy'
+  liquibase:
+    change-log: 'classpath:db/liquibase-changelog-master.xml'
+    contexts: 'test-data'
