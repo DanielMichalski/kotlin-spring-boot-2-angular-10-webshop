@@ -25,7 +25,7 @@ How to run application
 On Windows
 ```bash
 ## Run PostgreSQL database on Docker
-cd backend/docker/dependencies
+cd backend/.docker/dependencies
 start.sh
 
 ## Build application from base directory using Maven Wrapper
@@ -39,7 +39,7 @@ mvnw.cmd spring-boot:run -pl backend
 On MacOS/ Linux
 ```bash
 ## Run PostgreSQL database on Docker
-cd backend/docker/dependencies
+cd backend/.docker/dependencies
 start.sh
 
 ## Build application from base directory using Maven Wrapper
