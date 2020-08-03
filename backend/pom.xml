@@ -7,13 +7,13 @@
 
 	<parent>
 		<groupId>pl.dmichalski</groupId>
-		<artifactId>spring-boot-2-angular-9-boilerplate</artifactId>
+		<artifactId>spring-boot-2-angular-10-boilerplate</artifactId>
 		<version>1.0.0</version>
 	</parent>
 
 	<artifactId>backend</artifactId>
 	<packaging>jar</packaging>
-	<name>Spring Boot 2 and Angular 9 Boilerplate :: Backend</name>
+	<name>Spring Boot 2 and Angular 10 Boilerplate :: Backend</name>
 
 	<properties>
 		<spring.boot.version>2.3.2.RELEASE</spring.boot.version>

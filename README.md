@@ -1,7 +1,7 @@
-Spring Boot 2 and Angular 9 Boilerplate
+Spring Boot 2 and Angular 10 Boilerplate
 ---------------------------------------------
 
-This project aims to present how to create a Spring Boot 2 + Angular 9 Web application.
+This project aims to present how to create a Spring Boot 2 + Angular 10 Web application.
 
 Core libraries
 ---------------------------------------------
@@ -28,26 +28,34 @@ On Windows
 cd backend/.docker/dependencies
 start.sh
 
-## Build application from base directory using Maven Wrapper
+## Build backend from base directory using Maven Wrapper
 cd ../../..
 mvnw.cmd clean install -pl backend
 
-## Run Spring boot application using Maven Wrapper or simly run Application class
+## Run backend using Maven Wrapper or simly run Application class
 mvnw.cmd spring-boot:run -pl backend
+
+## Run Frontend Angular application using npm
+cd frontend
+npm run start
 ```
 
 On MacOS/ Linux
 ```bash
 ## Run PostgreSQL database on Docker
 cd backend/.docker/dependencies
-start.sh
+./start.sh
 
-## Build application from base directory using Maven Wrapper
+## Build backend from base directory using Maven Wrapper
 cd ../../..
 ./mvnw clean install -pl backend
 
-## Run Spring boot application using Maven Wrapper or simly run Application class
+## Run backend using Maven Wrapper or simly run Application class
 ./mvnw spring-boot:run -pl backend
+
+## Run Frontend Angular application using npm
+cd frontend
+npm run start
 ```
 
 Application access
