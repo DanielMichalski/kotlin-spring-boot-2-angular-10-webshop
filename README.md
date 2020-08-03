@@ -9,9 +9,9 @@ Core libraries
 - JPA (Hibernate)
 - Liquibase
 - Spring Data Repositories
-- Angular 9
-- Angular Material 9
-- Angular Flex Layout 9
+- Angular 10
+- Angular Material 10
+- Angular Flex Layout 10
 - Docker
 
 Requirements
