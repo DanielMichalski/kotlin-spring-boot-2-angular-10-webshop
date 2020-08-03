@@ -22,7 +22,8 @@ Requirements
 
 How to run application
 ---------------------------------------------
-On Windows
+### On Windows
+Backend
 ```bash
 ## Run PostgreSQL database on Docker
 cd backend/.docker/dependencies
@@ -34,13 +35,17 @@ mvnw.cmd clean install -pl backend
 
 ## Run backend using Maven Wrapper or simly run Application class
 mvnw.cmd spring-boot:run -pl backend
-
+```
+Frontend
+```bash
 ## Run Frontend Angular application using npm
 cd frontend
+npm i
 npm run start
 ```
 
-On MacOS/ Linux
+### On MacOS / Linux
+Backend
 ```bash
 ## Run PostgreSQL database on Docker
 cd backend/.docker/dependencies
@@ -52,9 +57,13 @@ cd ../../..
 
 ## Run backend using Maven Wrapper or simly run Application class
 ./mvnw spring-boot:run -pl backend
+```
 
+Frontend
+```bash
 ## Run Frontend Angular application using npm
 cd frontend
+npm i
 npm run start
 ```
 
