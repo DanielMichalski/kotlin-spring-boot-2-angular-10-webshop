@@ -22,7 +22,7 @@ Requirements
 
 How to run application in development mode
 ---------------------------------------------
-### On Windows
+#### On Windows
 ##### Backend
 ```bash
 ## Run PostgreSQL database on Docker
@@ -44,7 +44,7 @@ npm i
 npm run start
 ```
 
-### On MacOS / Linux
+#### On MacOS / Linux
 ##### Backend
 ```bash
 ## Run PostgreSQL database on Docker
@@ -69,14 +69,14 @@ npm run start
 
 How to run application using Docker Compose
 ---------------------------------------------
-### On Windows
+#### On Windows
 ```bash
 ## Run Backend and Frontend using Docker Compose
 cd .docker
 start.sh
 ```
 
-### On MacOS / Linux
+#### On MacOS / Linux
 ```bash
 ## Run Backend and Frontend using Docker Compose
 cd .docker
