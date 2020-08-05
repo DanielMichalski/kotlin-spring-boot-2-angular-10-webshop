@@ -1,0 +1,4 @@
+backend/.docker
+backend/target
+backend/*.iml
+frontend/node_modules

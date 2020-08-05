@@ -1,0 +1,7 @@
+{
+  "/api": {
+    "target": "http://boilerplate-be-api:8080",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

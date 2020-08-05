@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: 'org.postgresql.Driver'
+    jdbc-url: 'jdbc:postgresql://${BOILERPLATE_DB_HOST}/${BOILERPLATE_DB_NAME}'
+    username: '${BOILERPLATE_DB_USER}'
+    password: '${BOILERPLATE_DB_PASSWORD}'

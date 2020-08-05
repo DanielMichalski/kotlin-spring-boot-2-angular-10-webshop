@@ -1,6 +1,8 @@
 {
   "name": "frontend",
   "version": "1.0.0",
+  "author": "Daniel Michalski",
+  "description": "A Full Stack application built with Spring Boot 2, Java 11 and Angular 10.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port=4444",
@@ -12,10 +14,12 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "10.0.6",
+    "@angular/cdk": "10.1.2",
     "@angular/common": "10.0.6",
     "@angular/compiler": "10.0.6",
     "@angular/core": "10.0.6",
     "@angular/forms": "10.0.6",
+    "@angular/material": "10.1.2",
     "@angular/platform-browser": "10.0.6",
     "@angular/platform-browser-dynamic": "10.0.6",
     "@angular/router": "10.0.6",
@@ -39,6 +43,7 @@
     "karma-jasmine": "3.3.0",
     "karma-jasmine-html-reporter": "1.5.0",
     "protractor": "7.0.0",
+    "puppeteer": "3.1.0",
     "ts-node": "8.3.0",
     "tslint": "6.1.0",
     "typescript": "3.9.5"

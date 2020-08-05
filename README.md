@@ -20,7 +20,7 @@ Requirements
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) 
 - [Node.js](https://nodejs.org/en/) 
 
-How to run application
+How to run application in development mode
 ---------------------------------------------
 ### On Windows
 ##### Backend
@@ -65,6 +65,22 @@ cd ../../..
 cd frontend
 npm i
 npm run start
+```
+
+How to run application using Docker Compose
+---------------------------------------------
+### On Windows
+```bash
+## Run Backend and Frontend using Docker Compose
+cd .docker
+start.sh
+```
+
+### On MacOS / Linux
+```bash
+## Run Backend and Frontend using Docker Compose
+cd .docker
+./start.sh
 ```
 
 Application access

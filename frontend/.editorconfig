@@ -1,16 +1,52 @@
-# Editor configuration, see https://editorconfig.org
+##
+##  This is the annoted, default '.editorconfig' file.
+##
+##  http://editorconfig.org
+##
+##      EditorConfig helps developers define and maintain consistent coding
+##      styles between different editors and IDEs.
+##      The EditorConfig project consists of a file format for defining
+##      coding styles and a collection of text editor plugins that enable
+##      editors to read the file format and adhere to defined styles.
+##      EditorConfig files are easily readable and they work nicely with
+##      version control systems.
+##
+##  Sublime plugin: https://github.com/sindresorhus/editorconfig-sublime#readme
+##  Vim plugin:     https://github.com/editorconfig/editorconfig-vim#readme
+##  Other plugins:  http://editorconfig.org/#download
+##
+
+##  This is the top-most EditorConfig file.
+
 root = true
 
+##  Mind your sanity; use the Ubiquitous Text Format.
 [*]
 charset = utf-8
-indent_style = space
-indent_size = 2
+
+##  Unix-style newlines.
+##  With a newline ending every file
+##  No trailing whitespace.
+[*]
+end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.ts]
-quote_type = single
-
+##  Do not trim traling whitespace for markdown files.
 [*.md]
 max_line_length = off
 trim_trailing_whitespace = false
+
+##  Mind your collegues' sanity: Indentation; no excuses, no exceptions.
+[*]
+indent_size = 4
+indent_style = space
+
+##  Except npm ;-) npm uses an indent width of 2, so comply with that.
+[package.json]
+indent_size = 2
+
+##  ngx-translate-extract uses tab indent with of 1
+[src/assets/i18n/locale-*.json]
+indent_size = 1
+indent_style = tab

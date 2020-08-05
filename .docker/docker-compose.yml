@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  boilerplate-fe-app:
+    build:
+      context: ../
+      dockerfile: Dockerfile-frontend
+    ports:
+      - 4444:4200
+    volumes:
+      - '../frontend:/app'
+      - '/app/node_modules'
+    depends_on:
+      - boilerplate-be-api
+    restart:
+      unless-stopped
+    networks:
+      - boilerplate-net
+
+  boilerplate-be-api:
+    build:
+      context: ../
+      dockerfile: Dockerfile-backend
+    ports:
+      - 8888:8888
+    environment:
+      BOILERPLATE_DB_HOST: 'boilerplate-db:5432'
+      BOILERPLATE_DB_NAME: ${DB_NAME}
+      BOILERPLATE_DB_USER: ${DB_USER}
+      BOILERPLATE_DB_PASSWORD: ${DB_PASSWORD}
+    depends_on:
+      - boilerplate-db
+    restart:
+      unless-stopped
+    networks:
+      - boilerplate-net
+
+  boilerplate-db:
+    container_name: boilerplate-db
+    image: ${DB_IMAGE}
+    ports:
+      - ${DB_PORT_ON_HOST}:5432
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    restart:
+      unless-stopped
+    networks:
+      - boilerplate-net
+
+networks:
+  boilerplate-net:
