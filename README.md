@@ -26,20 +26,20 @@ How to run application in development mode
 ##### Backend
 ```bash
 ## Run PostgreSQL database on Docker
-cd backend/.docker/dependencies
+cd webshop-backend/.docker/dependencies
 start.sh
 
 ## Build backend from base directory using Maven Wrapper
 cd ../../..
-mvnw.cmd clean install -pl backend
+mvnw.cmd clean install -pl webshop-backend
 
 ## Run backend using Maven Wrapper or simly run Application class
-mvnw.cmd spring-boot:run -pl backend
+mvnw.cmd spring-boot:run -pl webshop-backend
 ```
 ##### Frontend
 ```bash
 ## Run Frontend Angular application using npm
-cd frontend
+cd webshop-frontend
 npm i
 npm run start
 ```
@@ -48,21 +48,21 @@ npm run start
 ##### Backend
 ```bash
 ## Run PostgreSQL database on Docker
-cd backend/.docker/dependencies
+cd webshop-backend/.docker/dependencies
 ./start.sh
 
 ## Build backend from base directory using Maven Wrapper
 cd ../../..
-./mvnw clean install -pl backend
+./mvnw clean install -pl webshop-backend
 
 ## Run backend using Maven Wrapper or simly run Application class
-./mvnw spring-boot:run -pl backend
+./mvnw spring-boot:run -pl webshop-backend
 ```
 
 ##### Frontend
 ```bash
 ## Run Frontend Angular application using npm
-cd frontend
+cd webshop-frontend
 npm i
 npm run start
 ```

@@ -1,4 +1,4 @@
-backend/.docker
-backend/target
-backend/*.iml
-frontend/node_modules
+webshop-backend/.docker
+webshop-backend/target
+webshop-backend/*.iml
+webshop-frontend/node_modules

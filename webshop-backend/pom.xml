@@ -11,7 +11,7 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>backend</artifactId>
+	<artifactId>webshop-backend</artifactId>
 	<packaging>jar</packaging>
 	<name>Spring Boot 2 and Angular 10 Webshop :: Backend</name>
 

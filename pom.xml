@@ -17,8 +17,8 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>backend</module>
-		<module>frontend</module>
+		<module>webshop-backend</module>
+		<module>webshop-frontend</module>
 	</modules>
 
 	<name>Spring Boot 2 and Angular 10 Webshop</name>
