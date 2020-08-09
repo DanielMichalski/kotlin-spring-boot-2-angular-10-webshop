@@ -6,8 +6,8 @@ server:
 spring:
   datasource:
     driver-class-name: 'org.postgresql.Driver'
-    jdbc-url: 'jdbc:postgresql://localhost:5555/boilerplate'
-    username: 'boilerplate_user'
+    jdbc-url: 'jdbc:postgresql://localhost:5555/webshop'
+    username: 'webshop_user'
     password: 'secret'
   jpa:
     properties:

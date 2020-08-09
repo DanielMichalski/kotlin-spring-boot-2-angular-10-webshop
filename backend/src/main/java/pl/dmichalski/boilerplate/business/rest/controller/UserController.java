@@ -1,4 +1,4 @@
-package pl.dmichalski.boilerplate.business.rest.controller;
+package pl.dmichalski.webshop.business.rest.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -9,7 +9,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pl.dmichalski.boilerplate.business.domain.entity.user.UserEntity;
+import pl.dmichalski.webshop.business.domain.entity.user.UserEntity;
 
 @RestController
 @RequestMapping(path = "/users")

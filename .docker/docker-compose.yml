@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  boilerplate-fe-app:
+  webshop-fe-app:
     build:
       context: ../
       dockerfile: Dockerfile-frontend
@@ -11,32 +11,32 @@ services:
       - '../frontend:/app'
       - '/app/node_modules'
     depends_on:
-      - boilerplate-be-api
+      - webshop-be-api
     restart:
       unless-stopped
     networks:
-      - boilerplate-net
+      - webshop-net
 
-  boilerplate-be-api:
+  webshop-be-api:
     build:
       context: ../
       dockerfile: Dockerfile-backend
     ports:
       - 8888:8888
     environment:
-      BOILERPLATE_DB_HOST: 'boilerplate-db:5432'
-      BOILERPLATE_DB_NAME: ${DB_NAME}
-      BOILERPLATE_DB_USER: ${DB_USER}
-      BOILERPLATE_DB_PASSWORD: ${DB_PASSWORD}
+      WEBSHOP_DB_HOST: 'webshop-db:5432'
+      WEBSHOP_DB_NAME: ${DB_NAME}
+      WEBSHOP_DB_USER: ${DB_USER}
+      WEBSHOP_DB_PASSWORD: ${DB_PASSWORD}
     depends_on:
-      - boilerplate-db
+      - webshop-db
     restart:
       unless-stopped
     networks:
-      - boilerplate-net
+      - webshop-net
 
-  boilerplate-db:
-    container_name: boilerplate-db
+  webshop-db:
+    container_name: webshop-db
     image: ${DB_IMAGE}
     ports:
       - ${DB_PORT_ON_HOST}:5432
@@ -47,7 +47,7 @@ services:
     restart:
       unless-stopped
     networks:
-      - boilerplate-net
+      - webshop-net
 
 networks:
-  boilerplate-net:
+  webshop-net:

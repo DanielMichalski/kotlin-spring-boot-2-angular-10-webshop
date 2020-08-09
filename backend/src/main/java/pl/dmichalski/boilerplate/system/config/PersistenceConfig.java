@@ -1,4 +1,4 @@
-package pl.dmichalski.boilerplate.system.config;
+package pl.dmichalski.webshop.system.config;
 
 import java.util.Properties;
 import javax.persistence.EntityManagerFactory;
@@ -20,11 +20,11 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = "pl.dmichalski.boilerplate.business.domain.entity")
+@EnableJpaRepositories(basePackages = "pl.dmichalski.webshop.business.domain.entity")
 public class PersistenceConfig {
 
-    public static final String BOILERPLATE_PERSISTENCE_UNIT_NAME = "boilerplate-pu";
-    private static final String ENTITY_BASE_PACKAGE = "pl.dmichalski.boilerplate.business.domain.entity";
+    public static final String WEBSHOP_PERSISTENCE_UNIT_NAME = "webshop-pu";
+    private static final String ENTITY_BASE_PACKAGE = "pl.dmichalski.webshop.business.domain.entity";
 
     private final JpaProperties jpaProperties;
 
@@ -37,7 +37,7 @@ public class PersistenceConfig {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
         em.setPackagesToScan(ENTITY_BASE_PACKAGE);
-        em.setPersistenceUnitName(BOILERPLATE_PERSISTENCE_UNIT_NAME);
+        em.setPersistenceUnitName(WEBSHOP_PERSISTENCE_UNIT_NAME);
         em.setJpaVendorAdapter(postgreSQLVendorAdapter());
         em.setJpaProperties(additionalProperties());
         return em;

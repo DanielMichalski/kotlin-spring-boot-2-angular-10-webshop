@@ -1,4 +1,4 @@
-Spring Boot 2 and Angular 10 Boilerplate
+Spring Boot 2 and Angular 10 WebShop
 ---------------------------------------------
 
 This project aims to present how to create a Spring Boot 2 + Angular 10 Web application.
@@ -96,4 +96,4 @@ Database access
 ---------------------------------------------
 | URL                                          	| Username         	| Password 	|
 |----------------------------------------------	|------------------	|----------	|
-| jdbc:postgresql://localhost:5555/boilerplate 	| boilerplate_user 	| secret   	|
+| jdbc:postgresql://localhost:5555/webshop 	    | webshop_user   	| secret   	|

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script can be used to rebuild a boilerplate project and refresh/restart the docker container in one go
+# This script can be used to rebuild a webshop project and refresh/restart the docker container in one go
 # This script should preserve your database
 
 docker-compose build

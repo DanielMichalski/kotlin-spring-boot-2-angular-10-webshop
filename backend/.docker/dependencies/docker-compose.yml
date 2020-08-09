@@ -1,8 +1,8 @@
 version: '3.8'
 
 services:
-  boilerplate-db:
-    container_name: boilerplate-db
+  webshop-db:
+    container_name: webshop-db
     image: ${DB_IMAGE}
     ports:
       - ${DB_PORT_ON_HOST}:5432
@@ -13,7 +13,7 @@ services:
     restart:
       unless-stopped
     networks:
-      - boilerplate_net
+      - webshop_net
 
 networks:
-  boilerplate_net:
+  webshop_net:

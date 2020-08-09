@@ -1,4 +1,4 @@
-package pl.dmichalski.boilerplate.business.domain.entity;
+package pl.dmichalski.webshop.business.domain.entity;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
