@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   webshop-fe-app:
+    container_name: webshop-fe-app
     build:
       context: ../
       dockerfile: Dockerfile-frontend
@@ -18,6 +19,7 @@ services:
       - webshop-net
 
   webshop-be-api:
+    container_name: webshop-be-api
     build:
       context: ../
       dockerfile: Dockerfile-backend
