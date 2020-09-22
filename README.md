@@ -85,7 +85,7 @@ npm i
 npm run start
 ```
 
-## Using Docker
+### Using Docker
 #### On Windows
 ```bash
 ## Run Backend and Frontend using Docker Compose
