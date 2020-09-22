@@ -20,9 +20,11 @@ Core backend libraries
 
 Core frontend libraries
 ---------------------------------------------
-| [Angular 10](https://angular.io/)                                                                                | Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.       |
-| [Angular Material 10](https://material.angular.io/)                                                              | Internationalized and accessible components for everyone. Well tested to ensure performance and reliability.                         |
-| [Angular Flex Layout 10](https://github.com/angular/flex-layout)                                                 | Angular Flex Layout provides a sophisticated layout API using Flexbox CSS + mediaQuery.                                              |
+| Library name                                                     | Description                                                                                                                          |
+|------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| [Angular 10](https://angular.io/)                                | Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.       |
+| [Angular Material 10](https://material.angular.io/)              | Internationalized and accessible components for everyone. Well tested to ensure performance and reliability.                         |
+| [Angular Flex Layout 10](https://github.com/angular/flex-layout) | Angular Flex Layout provides a sophisticated layout API using Flexbox CSS + mediaQuery.                                              |
 
 Requirements
 ---------------------------------------------
