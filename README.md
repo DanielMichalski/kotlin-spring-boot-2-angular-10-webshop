@@ -32,15 +32,16 @@ This project aims to present how to create a Spring Boot 2 + Angular 10 Web appl
 | [FindBugs](http://findbugs.sourceforge.net/)                                                                     | FindBugs is a development tool which uses static analysis to look for bugs in Java code.                                |
 
 ### Frontend
-| Library name                                                     | Description                                                                                                                          |
-|------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [Angular 10](https://angular.io/)                                | Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.       |
-| [Angular Material 10](https://material.angular.io/)              | Internationalized and accessible components for everyone. Well tested to ensure performance and reliability.                         |
-| [Angular Flex Layout 10](https://github.com/angular/flex-layout) | Angular Flex Layout provides a sophisticated layout API using Flexbox CSS + mediaQuery.                                              |
+| Library name                                                     | Description                                                                                                                    |
+|------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| [Angular 10](https://angular.io/)                                | Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps. |
+| [Angular Material 10](https://material.angular.io/)              | Internationalized and accessible components for everyone. Well tested to ensure performance and reliability.                   |
+| [Angular Flex Layout 10](https://github.com/angular/flex-layout) | Angular Flex Layout provides a sophisticated layout API using Flexbox CSS + mediaQuery.                                        |
 
 ## Running the application
-### On Windows
-#### Backend
+### In Development mode
+#### On Windows
+##### Backend
 ```bash
 ## Run PostgreSQL database on Docker
 cd webshop-backend/.docker/dependencies
@@ -53,7 +54,7 @@ mvnw.cmd clean install -pl webshop-backend
 ## Run backend using Maven Wrapper or simly run Application class
 mvnw.cmd spring-boot:run -pl webshop-backend
 ```
-#### Frontend
+##### Frontend
 ```bash
 ## Run Frontend Angular application using npm
 cd webshop-frontend
@@ -61,8 +62,8 @@ npm i
 npm run start
 ```
 
-### On MacOS / Linux
-#### Backend
+#### On MacOS / Linux
+##### Backend
 ```bash
 ## Run PostgreSQL database on Docker
 cd webshop-backend/.docker/dependencies
@@ -76,7 +77,7 @@ cd ../../..
 ./mvnw spring-boot:run -pl webshop-backend
 ```
 
-#### Frontend
+##### Frontend
 ```bash
 ## Run Frontend Angular application using npm
 cd webshop-frontend
@@ -84,15 +85,15 @@ npm i
 npm run start
 ```
 
-## How to run application using Docker Compose
-### On Windows
+## Using Docker
+#### On Windows
 ```bash
 ## Run Backend and Frontend using Docker Compose
 cd .docker
 start.sh
 ```
 
-### On MacOS / Linux
+#### On MacOS / Linux
 ```bash
 ## Run Backend and Frontend using Docker Compose
 cd .docker
