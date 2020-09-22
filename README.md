@@ -10,6 +10,8 @@ This project aims to present how to create a Spring Boot 2 + Angular 10 Web appl
     * [Backend](#backend)
     * [Frontend](#frontend)
 * [Running the application](#running-the-application)
+    * [In Development mode](#in-development-mode)
+    * [Using Docker](#using-docker)
 * [Application access](#application-access)
 * [Database access](#database-access)
 
