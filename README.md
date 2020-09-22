@@ -5,7 +5,7 @@ Spring Boot 2 and Angular 10 WebShop
 
 This project aims to present how to create a Spring Boot 2 + Angular 10 Web application.
 
-Core libraries
+Core backend libraries
 ---------------------------------------------
 | Library name                                                                                                     | Description                                                                                                                          |
 |------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -17,10 +17,12 @@ Core libraries
 | [Lombok](https://projectlombok.org/)                                                                             | Project Lombok is a java library that automatically plugs into your editor and build tools, spicing up your java.                    |
 | [Checkstyle](https://checkstyle.sourceforge.io/)                                                                 | Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard.                              |
 | [FindBugs](http://findbugs.sourceforge.net/)                                                                     | FindBugs is a development tool which uses static analysis to look for bugs in Java code.                                             |
+
+Core frontend libraries
+---------------------------------------------
 | [Angular 10](https://angular.io/)                                                                                | Angular is an application design framework and development platform for creating efficient and sophisticated single-page apps.       |
 | [Angular Material 10](https://material.angular.io/)                                                              | Internationalized and accessible components for everyone. Well tested to ensure performance and reliability.                         |
 | [Angular Flex Layout 10](https://github.com/angular/flex-layout)                                                 | Angular Flex Layout provides a sophisticated layout API using Flexbox CSS + mediaQuery.                                              |
-
 
 Requirements
 ---------------------------------------------
