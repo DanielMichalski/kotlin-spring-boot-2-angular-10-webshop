@@ -7,15 +7,17 @@
 
 	<parent>
 		<groupId>pl.dmichalski</groupId>
-		<artifactId>spring-boot-2-angular-10-webshop</artifactId>
+		<artifactId>kotlin-spring-boot-2-angular-10-webshop</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>webshop-backend</artifactId>
 	<packaging>jar</packaging>
-	<name>Spring Boot 2 and Angular 10 Webshop :: Backend</name>
+	<name>Kotlin + Spring Boot 2 + Angular 10 Webshop :: Backend</name>
 
 	<properties>
+		<kotlin.version>1.4.10</kotlin.version>
+		<kotlin-maven-plugin.jvmTarget>1.8</kotlin-maven-plugin.jvmTarget>
 		<spring.boot.version>2.3.2.RELEASE</spring.boot.version>
 		<hibernate.types.5.version>2.9.13</hibernate.types.5.version>
 		<postgresql.version>42.2.14</postgresql.version>
@@ -26,10 +28,15 @@
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<checkstyle.plugin.version>3.1.0</checkstyle.plugin.version>
 		<findbugs.maven.plugin.version>3.0.5</findbugs.maven.plugin.version>
-		<java.version>8</java.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.jetbrains.kotlin</groupId>
+			<artifactId>kotlin-stdlib</artifactId>
+			<version>${kotlin.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -80,14 +87,32 @@
 	</dependencies>
 
 	<build>
+		<sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
+
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${maven-compiler-plugin.version}</version>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-maven-plugin</artifactId>
+				<version>${kotlin.version}</version>
+				<executions>
+					<execution>
+						<id>compile</id>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>test-compile</id>
+						<goals>
+							<goal>test-compile</goal>
+						</goals>
+						<configuration>
+							<skip>true</skip>
+						</configuration>
+					</execution>
+				</executions>
 				<configuration>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
+					<jvmTarget>${kotlin-maven-plugin.jvmTarget}</jvmTarget>
 				</configuration>
 			</plugin>
 
@@ -102,24 +127,6 @@
 					</sourceDirectories>
 					<configLocation>./.checkstyle/checkstyle.xml</configLocation>
 					<failOnViolation>true</failOnViolation>
-				</configuration>
-				<executions>
-					<execution>
-						<id>analyze-compile</id>
-						<phase>compile</phase>
-						<goals>
-							<goal>check</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>findbugs-maven-plugin</artifactId>
-				<version>${findbugs.maven.plugin.version}</version>
-				<configuration>
-					<effort>Max</effort>
 				</configuration>
 				<executions>
 					<execution>

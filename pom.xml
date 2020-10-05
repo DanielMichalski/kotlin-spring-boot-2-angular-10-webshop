@@ -12,7 +12,7 @@
 	</parent>
 
 	<groupId>pl.dmichalski</groupId>
-	<artifactId>spring-boot-2-angular-10-webshop</artifactId>
+	<artifactId>kotlin-spring-boot-2-angular-10-webshop</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
@@ -21,7 +21,7 @@
 		<module>webshop-frontend</module>
 	</modules>
 
-	<name>Spring Boot 2 and Angular 10 Webshop</name>
+	<name>Kotlin + Spring Boot 2 + Angular 10 Webshop</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

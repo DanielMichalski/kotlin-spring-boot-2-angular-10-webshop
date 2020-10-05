@@ -10,6 +10,7 @@ spring:
     username: 'webshop_user'
     password: 'secret'
   jpa:
+    open-in-view: false
     properties:
       hibernate:
         hbm2ddl.auto: validate

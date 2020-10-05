@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "1.0.0",
   "author": "Daniel Michalski",
-  "description": "A Full Stack application built with Spring Boot 2, Java 11 and Angular 10.",
+  "description": "A Full Stack application built with Kotlin, Spring Boot 2 and Angular 10.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port=4444",
