@@ -54,7 +54,7 @@ start.sh
 cd ../../..
 mvnw.cmd clean install -pl webshop-backend
 
-## Run backend using Maven Wrapper or simly run Application class
+## Run backend using Maven Wrapper or simply run Application class
 mvnw.cmd spring-boot:run -pl webshop-backend
 ```
 ##### Frontend
@@ -76,7 +76,7 @@ cd webshop-backend/.docker/dependencies
 cd ../../..
 ./mvnw clean install -pl webshop-backend
 
-## Run backend using Maven Wrapper or simly run Application class
+## Run backend using Maven Wrapper or simply run Application class
 ./mvnw spring-boot:run -pl webshop-backend
 ```
 
