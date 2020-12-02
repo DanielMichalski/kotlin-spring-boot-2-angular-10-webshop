@@ -1,4 +1,4 @@
-package pl.dmichalski.webshop.system.config
+package com.danielmichalski.webshop.system.config
 
 import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties
 import org.springframework.boot.context.properties.ConfigurationProperties
@@ -19,7 +19,7 @@ import javax.sql.DataSource
 
 @Configuration
 @EnableTransactionManagement
-@EnableJpaRepositories(basePackages = ["pl.dmichalski.webshop.business.domain.entity"])
+@EnableJpaRepositories(basePackages = ["com.danielmichalski.webshop.business.domain.entity"])
 open class PersistenceConfig(private val jpaProperties: JpaProperties) {
 
     @Bean
@@ -64,7 +64,7 @@ open class PersistenceConfig(private val jpaProperties: JpaProperties) {
     }
 
     companion object {
-        private const val ENTITY_BASE_PACKAGE = "pl.dmichalski.webshop.business.domain.entity"
+        private const val ENTITY_BASE_PACKAGE = "com.danielmichalski.webshop.business.domain.entity"
         private const val WEBSHOP_PERSISTENCE_UNIT_NAME = "webshop-pu"
     }
 }

@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>pl.dmichalski</groupId>
+		<groupId>com.danielmichalski</groupId>
 		<artifactId>kotlin-spring-boot-2-angular-10-webshop</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>

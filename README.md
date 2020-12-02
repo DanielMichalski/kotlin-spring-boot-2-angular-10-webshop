@@ -51,7 +51,6 @@ cd webshop-backend/.docker/dependencies
 start.sh
 
 ## Build backend from base directory using Maven Wrapper
-cd ../../..
 mvnw.cmd clean install -pl webshop-backend
 
 ## Run backend using Maven Wrapper or simply run Application class
@@ -73,7 +72,6 @@ cd webshop-backend/.docker/dependencies
 ./start.sh
 
 ## Build backend from base directory using Maven Wrapper
-cd ../../..
 ./mvnw clean install -pl webshop-backend
 
 ## Run backend using Maven Wrapper or simply run Application class

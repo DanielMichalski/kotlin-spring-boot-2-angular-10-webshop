@@ -1,4 +1,4 @@
-package pl.dmichalski.webshop
+package com.danielmichalski.webshop
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication

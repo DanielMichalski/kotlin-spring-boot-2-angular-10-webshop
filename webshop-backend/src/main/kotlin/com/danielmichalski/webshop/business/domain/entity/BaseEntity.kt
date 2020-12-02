@@ -1,4 +1,4 @@
-package pl.dmichalski.webshop.business.domain.entity
+package com.danielmichalski.webshop.business.domain.entity
 
 import lombok.Getter
 import javax.persistence.GeneratedValue
