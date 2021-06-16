@@ -3,8 +3,7 @@ FROM maven:3.6.3-openjdk-11-slim AS build
 ### Build ###
 LABEL maintainer="michalskidaniel2@gmail.com"
 WORKDIR /usr/app/src/backend
-COPY webshop-backend .
-COPY pom.xml ../
+ADD . .
 RUN mvn clean package
 
 ### Run ###

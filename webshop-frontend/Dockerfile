@@ -3,7 +3,7 @@ FROM node:12.18.3-alpine
 ### Build ###
 LABEL maintainer="michalskidaniel2@gmail.com"
 WORKDIR /usr/app/src
-COPY webshop-frontend .
+ADD . .
 RUN npm install
 
 ### Run ###

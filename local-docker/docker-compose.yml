@@ -1,16 +1,15 @@
-version: '3.8'
+version: '3.9'
 
 services:
   webshop-fe-app:
     container_name: webshop-fe-app
     build:
-      context: ../
-      dockerfile: Dockerfile-frontend
+      context: ../webshop-frontend
     ports:
       - 4444:4200
     volumes:
-      - '../frontend:/app'
-      - '/app/node_modules'
+      - ./webshop-frontend:/app
+      - /app/node_modules
     depends_on:
       - webshop-be-api
     restart:
@@ -21,12 +20,11 @@ services:
   webshop-be-api:
     container_name: webshop-be-api
     build:
-      context: ../
-      dockerfile: Dockerfile-backend
+      context: ../webshop-backend
     ports:
       - 8888:8888
     environment:
-      WEBSHOP_DB_HOST: 'webshop-db:5432'
+      WEBSHOP_DB_HOST: webshop-db:5432
       WEBSHOP_DB_NAME: ${DB_NAME}
       WEBSHOP_DB_USER: ${DB_USER}
       WEBSHOP_DB_PASSWORD: ${DB_PASSWORD}

@@ -47,14 +47,11 @@ This project aims to present how to create and configure a Kotlin + Spring Boot 
 ##### Backend
 ```bash
 ## Run PostgreSQL database on Docker
-cd webshop-backend/.docker/dependencies
-start.sh
+docker-compose up -d
 
-## Build backend from base directory using Maven Wrapper
-mvnw.cmd clean install -pl webshop-backend
-
-## Run backend using Maven Wrapper or simply run Application class
-mvnw.cmd spring-boot:run -pl webshop-backend
+## Build and run backend using Maven Wrapper
+cd webshop-backend
+mvnw.cmd clean install spring-boot:run
 ```
 ##### Frontend
 ```bash
@@ -68,14 +65,11 @@ npm run start
 ##### Backend
 ```bash
 ## Run PostgreSQL database on Docker
-cd webshop-backend/.docker/dependencies
-./start.sh
+docker-compose up -d
 
-## Build backend from base directory using Maven Wrapper
-./mvnw clean install -pl webshop-backend
-
-## Run backend using Maven Wrapper or simply run Application class
-./mvnw spring-boot:run -pl webshop-backend
+## Build and run backend using Maven Wrapper
+cd webshop-backend
+./mvnw clean install spring-boot:run
 ```
 
 ##### Frontend
@@ -86,19 +80,19 @@ npm i
 npm run start
 ```
 
-### Using Docker
+### Whole application using Docker
 #### On Windows
 ```bash
 ## Run Backend and Frontend using Docker Compose
-cd .docker
-start.sh
+cd local-docker
+docker-compose up -d
 ```
 
 #### On MacOS / Linux
 ```bash
 ## Run Backend and Frontend using Docker Compose
-cd .docker
-./start.sh
+cd local-docker
+docker-compose up -d
 ```
 
 ## Application access

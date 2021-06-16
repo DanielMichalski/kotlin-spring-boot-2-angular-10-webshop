@@ -120,4 +120,4 @@ test-reports
 
 ##  Maven wrapper;
 ##
-.mvn/wrapper/maven-wrapper.jar
+webshop-backend/.mvn/wrapper/maven-wrapper.jar
