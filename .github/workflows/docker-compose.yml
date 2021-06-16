@@ -1,0 +1,19 @@
+name: Docker Compose CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the Docker Compose images
+      run: cd local-docker &&
+           docker-compose build
