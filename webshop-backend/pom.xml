@@ -18,7 +18,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<kotlin.version>1.4.10</kotlin.version>
+		<kotlin.version>1.6.0</kotlin.version>
 		<kotlin-maven-plugin.jvmTarget>1.8</kotlin-maven-plugin.jvmTarget>
 		<spring.boot.version>2.3.2.RELEASE</spring.boot.version>
 		<hibernate.types.5.version>2.9.13</hibernate.types.5.version>
