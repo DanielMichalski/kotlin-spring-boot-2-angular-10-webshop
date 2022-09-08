@@ -22,7 +22,7 @@
 		<kotlin-maven-plugin.jvmTarget>1.8</kotlin-maven-plugin.jvmTarget>
 		<spring.boot.version>2.3.2.RELEASE</spring.boot.version>
 		<hibernate.types.5.version>2.9.13</hibernate.types.5.version>
-		<postgresql.version>42.2.14</postgresql.version>
+		<postgresql.version>42.4.1</postgresql.version>
 		<liquibase.version>4.0.0</liquibase.version>
 		<lombok.version>1.18.12</lombok.version>
 		<guava.version>29.0-jre</guava.version>
